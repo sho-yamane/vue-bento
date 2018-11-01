@@ -1,8 +1,8 @@
-import Heading from './src/main';
+import Heading from './src/main'
 
 /* istanbul ignore next */
 Heading.install = function(Vue) {
-  Vue.component(Heading.name, Heading);
-};
+  Vue.component(Heading.name, Heading)
+}
 
-export default Heading;
+export default Heading
