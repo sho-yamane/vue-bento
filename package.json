@@ -35,5 +35,8 @@
     "sass-loader": "^7.1.0",
     "vue": "^2.5.17",
     "vue-template-compiler": "^2.5.17"
+  },
+  "dependencies": {
+    "musubii": "^6.5.0"
   }
 }

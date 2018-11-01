@@ -2,16 +2,17 @@
   <component
     :is="tag"
     :class="className"
-    class="is-dark"
+    class="is-info"
   >
     <slot>text</slot>
   </component>
 </template>
 
+
 <script>
 import Presenter from '../Presenter.vue'
 export default {
-  name: 'MbHeadingBlack',
+  name: 'MbHeadingInfo',
   extends: Presenter,
   props: {
     ...Presenter.props
