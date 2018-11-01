@@ -6281,6 +6281,11 @@ mkdirp@0.5.1, mkdirp@0.5.x, "mkdirp@>=0.5 0", mkdirp@^0.5.0, mkdirp@^0.5.1, mkdi
   dependencies:
     minimist "0.0.8"
 
+moftone@^6.2.0:
+  version "6.2.0"
+  resolved "https://registry.yarnpkg.com/moftone/-/moftone-6.2.0.tgz#bf14a973459e562bd4d081e92cf6d7b778d7f2b0"
+  integrity sha512-GBGqAo4voH7l/9/PNYudumbbZGwTGwXqELHOWsr4hxuL2ETSa+o3DqETYxF2uo6LVkPSGtAk84uyUz9YXyVfQA==
+
 move-concurrently@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/move-concurrently/-/move-concurrently-1.0.1.tgz#be2c005fda32e0b29af1f05d7c4b33214c701f92"
