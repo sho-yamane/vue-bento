@@ -1,0 +1,25 @@
+{
+  "name": "musubii-for-vue",
+  "version": "1.0.0",
+  "description": "A Component Library for Vue.js.",
+  "main": "dist/musibii.common.js",
+  "author": "Sho Yamane",
+  "license": "MIT",
+  "private": false,
+  "module": "dist/musubii.esm.js",
+  "unpkg": "dist/musubii.min.js",
+  "style": "dist/style/index.css",
+  "scripts": {
+    "build": "npm run build:umd & npm run build:es & npm run build:unpkg",
+    "build:umd": "rollup --config build/rollup.config.js --format umd --file dist/musubii.umd.js",
+    "build:es": "rollup --config build/rollup.config.js --format es --file dist/musubii.esm.js",
+    "build:unpkg": "rollup --config build/rollup.config.js --format iife --file dist/musubii.min.js"
+  },
+  "devDependencies": {
+    "rollup": "^0.66.6",
+    "rollup-plugin-buble": "^0.19.4",
+    "rollup-plugin-vue": "^4.3.2",
+    "vue": "^2.5.17",
+    "vue-template-compiler": "^2.5.17"
+  }
+}
