@@ -5510,6 +5510,10 @@ multicast-dns@^6.0.1:
     dns-packet "^1.3.1"
     thunky "^1.0.2"
 
+musubii@^6.5.0:
+  version "6.5.0"
+  resolved "https://registry.yarnpkg.com/musubii/-/musubii-6.5.0.tgz#6c60bf14e018e31efe2e0aef1c2ff464dc0fcc43"
+
 mute-stream@0.0.7:
   version "0.0.7"
   resolved "https://registry.yarnpkg.com/mute-stream/-/mute-stream-0.0.7.tgz#3075ce93bc21b8fab43e1bc4da7e8115ed1e7bab"

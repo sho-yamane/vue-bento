@@ -1,3 +1,13 @@
+<template>
+  <component
+    :is="tag"
+    :class="className"
+    class="is-dark"
+  >
+    <slot>text</slot>
+  </component>
+</template>
+
 <script>
 import Presenter from '../Presenter.vue'
 export default {

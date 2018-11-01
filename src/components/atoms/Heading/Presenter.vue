@@ -1,36 +1,40 @@
-<template>
-  <component
-    :is="tag"
-    :class="className"
-  >
-    <slot/>
-  </component>
-</template>
-
 <script>
 export default {
   name: 'Presenter',
+  props: {
+    level: {
+      type: Number,
+      default: 1
+    },
+    size: {
+      type: String,
+      default: 'md'
+    },
+    strong: {
+      type: Boolean,
+      default: false
+    }
+  },
   computed: {
     formattedLevel() {
       return Math.max(1, Math.min(6, this.level))
-    },
-    formattedViewLevel() {
-      const level =
-        typeof this.visualLevel !== 'undefined'
-          ? this.visualLevel
-          : this.formattedLevel
-      return Math.max(1, Math.min(6, level))
     },
     tag() {
       return `h${this.formattedLevel}`
     },
     className() {
       let className = []
-      className.push(`_h${this.formattedViewLevel}`)
-      if (this.weight === '700') {
-        className.push('_fw700')
+
+      className.push('heading')
+
+      if (this.strong) {
+        className.push('is-strong')
       }
-      className = this.$_pushClassDarkMode(className)
+
+      if (this.size) {
+        className.push(`is-${this.size}`)
+      }
+
       return className
     }
   }
