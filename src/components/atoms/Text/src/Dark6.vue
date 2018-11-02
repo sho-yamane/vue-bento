@@ -2,7 +2,7 @@
   <component
     :is="tag"
     :class="className"
-    class="is-danger"
+    class="is-dark-6"
   >
     <slot>text</slot>
   </component>
@@ -11,7 +11,7 @@
 <script>
 import Presenter from '../Presenter.vue'
 export default {
-  name: 'VbHeadingDanger',
+  name: 'VbTextDark6',
   extends: Presenter,
   props: {
     ...Presenter.props

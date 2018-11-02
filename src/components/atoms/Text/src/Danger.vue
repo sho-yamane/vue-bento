@@ -11,7 +11,7 @@
 <script>
 import Presenter from '../Presenter.vue'
 export default {
-  name: 'VbHeadingDanger',
+  name: 'VbTextDanger',
   extends: Presenter,
   props: {
     ...Presenter.props

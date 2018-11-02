@@ -12,7 +12,7 @@
 <script>
 import Presenter from '../Presenter.vue'
 export default {
-  name: 'MbHeadingSuccess',
+  name: 'VbHeadingSuccess',
   extends: Presenter,
   props: {
     ...Presenter.props

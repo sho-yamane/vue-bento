@@ -1,4 +1,4 @@
-import Heading from './src/main'
+import Heading from './src/'
 
 /* istanbul ignore next */
 Heading.install = function(Vue) {
