@@ -10,6 +10,7 @@
   "unpkg": "dist/musubii.min.js",
   "style": "dist/style/index.css",
   "scripts": {
+    "serve": "STYLE_DIST_DIR=public yarn build:style & vue serve",
     "build": "vue-cli-service build --target lib --name musubii-for-vue src/wrapper.js",
     "build:style": "gulp build:sass --gulpfile build/gulpfile.js",
     "lint": "vue-cli-service lint",

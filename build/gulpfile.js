@@ -11,7 +11,9 @@ sass.compiler = require('node-sass')
 // Constant paths
 const ROOT = path.resolve(__dirname, '..')
 const SRC = path.join(ROOT, 'src')
-const DIST = path.join(ROOT, 'dist')
+const DIST = process.env.STYLE_DIST_DIR
+  ? path.join(ROOT, process.env.STYLE_DIST_DIR)
+  : path.join(ROOT, 'dist')
 
 // Options
 const sassOptions = {
