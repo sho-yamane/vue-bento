@@ -2,15 +2,26 @@
 export default {
   name: 'Presenter',
   props: {
-    level: {
-      type: Number,
-      default: 1,
-      required: true
+    tag: {
+      type: String,
+      default: 'p',
+      validator(val) {
+        return ['div', 'p', 'span'].includes(val)
+      }
     },
     size: {
       type: String,
-      default: 'md',
-      required: true
+      default: 'md'
+    },
+    link: {
+      type: Boolean,
+      default: false,
+      required: false
+    },
+    linkReverse: {
+      type: Boolean,
+      default: false,
+      required: false
     },
     strong: {
       type: Boolean,
@@ -89,16 +100,22 @@ export default {
     }
   },
   computed: {
-    formattedLevel() {
-      return Math.max(1, Math.min(6, this.level))
-    },
-    tag() {
-      return `h${this.formattedLevel}`
-    },
     className() {
       let className = []
 
-      className.push('heading')
+      if (this.tag === 'div') {
+        className.push('texts')
+      } else {
+        className.push('text')
+      }
+
+      if (this.link) {
+        className.push('is-link')
+      }
+
+      if (this.linkReverse) {
+        className.push('is-link-reverse')
+      }
 
       if (this.strong) {
         className.push('is-strong')
