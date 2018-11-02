@@ -23,7 +23,7 @@ __vue_render__._withStripped = true;
   /* style */
   var __vue_inject_styles__ = function (inject) {
     if (!inject) { return }
-    inject("data-v-3249dae2_0", { source: "\n.test {\n  font-size: 21px;\n  background: #000;\n  color: #fff;\n}\n", map: {"version":3,"sources":["/Users/shoyamane/Work_local/app/Vue/musubii-for-vue/src/MyComponent.vue"],"names":[],"mappings":";AAWA;EACA,gBAAA;EACA,iBAAA;EACA,YAAA;CACA","file":"MyComponent.vue","sourcesContent":["<template>\n  <div class=\"test\">あいうえお</div>\n</template>\n\n<script>\nexport default {\n  name: 'MyComponent'\n}\n</script>\n\n<style>\n.test {\n  font-size: 21px;\n  background: #000;\n  color: #fff;\n}\n</style>\n"]}, media: undefined });
+    inject("data-v-52cc1aaf_0", { source: "\n.test {\n  font-size: 21px;\n  background: #000;\n  color: $red-50;\n}\n", map: {"version":3,"sources":["/Users/shoyamane/Work_local/app/Vue/musubii-for-vue/src/MyComponent.vue"],"names":[],"mappings":";AAWA;EACA,gBAAA;EACA,iBAAA;EACA,eAAA;CACA","file":"MyComponent.vue","sourcesContent":["<template>\n  <div class=\"test\">あいうえお</div>\n</template>\n\n<script>\nexport default {\n  name: 'MyComponent'\n}\n</script>\n\n<style>\n.test {\n  font-size: 21px;\n  background: #000;\n  color: $red-50;\n}\n</style>\n"]}, media: undefined });
 
   };
   /* scoped */
@@ -304,29 +304,20 @@ __vue_render__$1._withStripped = true;
     undefined
   );
 
-// vue コンポーネントのインポート
+var components = [MyComponent, MyComponent2];
 
-var components = [
-  MyComponent,
-  MyComponent2
-];
-
-// Vue.use() によって実行される install 関数を定義
 function install(Vue) {
-  if (install.installed) { return; }
+  if (install.installed) { return }
   install.installed = true;
   components.forEach(function (component) {
     Vue.component(component.name, component);
   });
 }
 
-// Vue.use() のためのモジュール定義を作成
-// Create module definition for Vue.use()
 var plugin = {
-  install: install,
+  install: install
 };
 
-// vue が見つかった場合に自動インストールする (ブラウザで <script> タグを用いた場合等)
 var GlobalVue = null;
 if (typeof window !== 'undefined') {
   GlobalVue = window.Vue;
@@ -337,5 +328,5 @@ if (GlobalVue) {
   GlobalVue.use(plugin);
 }
 
-export default component;
+export default components;
 export { install };

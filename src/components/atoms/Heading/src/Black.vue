@@ -21,4 +21,7 @@ export default {
 
 <style scoped lang="scss">
 @import './style.scss';
+.heading {
+  background: $white;
+}
 </style>

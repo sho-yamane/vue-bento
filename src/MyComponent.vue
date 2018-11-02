@@ -12,6 +12,6 @@ export default {
 .test {
   font-size: 21px;
   background: #000;
-  color: #fff;
+  color: $red-50;
 }
 </style>

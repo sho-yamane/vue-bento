@@ -39,6 +39,7 @@
     "node-sass-package-importer": "^5.2.0",
     "rollup": "^0.66.6",
     "rollup-plugin-buble": "^0.19.4",
+    "rollup-plugin-scss": "^0.4.0",
     "rollup-plugin-vue": "^4.3.2",
     "sass-dashi": "^0.3.0",
     "sass-loader": "^7.1.0",
