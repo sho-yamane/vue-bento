@@ -11,7 +11,7 @@
 <script>
 import Presenter from '../Presenter.vue'
 export default {
-  name: 'MbHeadingLight2',
+  name: 'VbHeadingLight2',
   extends: Presenter,
   props: {
     ...Presenter.props

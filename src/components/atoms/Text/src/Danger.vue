@@ -11,7 +11,7 @@
 <script>
 import Presenter from '../Presenter.vue'
 export default {
-  name: 'MbTextDanger',
+  name: 'VbTextDanger',
   extends: Presenter,
   props: {
     ...Presenter.props

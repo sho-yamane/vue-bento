@@ -11,7 +11,7 @@
 <script>
 import Presenter from '../Presenter.vue'
 export default {
-  name: 'MbHeadingDark',
+  name: 'VbHeadingDark',
   extends: Presenter,
   props: {
     ...Presenter.props

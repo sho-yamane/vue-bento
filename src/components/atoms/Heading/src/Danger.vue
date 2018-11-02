@@ -8,11 +8,10 @@
   </component>
 </template>
 
-
 <script>
 import Presenter from '../Presenter.vue'
 export default {
-  name: 'MbHeadingDanger',
+  name: 'VbHeadingDanger',
   extends: Presenter,
   props: {
     ...Presenter.props

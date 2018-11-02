@@ -32,57 +32,41 @@ export default {
       default: false,
       required: false
     },
-    capitalize: {
+    align: {
+      type: String,
+      default: null,
+      required: false,
+      validator(val) {
+        return ['left', 'center', 'right', 'justify'].includes(val)
+      }
+    },
+    transform: {
+      type: String,
+      default: null,
+      required: false,
+      validator(val) {
+        return ['capitalize', 'lowercase', 'uppercase'].includes(val)
+      }
+    },
+    ellipsis: {
       type: Boolean,
       default: false,
       required: false
     },
-    lowercase: {
+    verticalAlign: {
+      type: String,
+      default: null,
+      required: false,
+      validator(val) {
+        return ['baseline', 'top', 'middle', 'bottom'].includes(val)
+      }
+    },
+    nowrap: {
       type: Boolean,
       default: false,
       required: false
     },
-    uppercase: {
-      type: Boolean,
-      default: false,
-      required: false
-    },
-    left: {
-      type: Boolean,
-      default: false,
-      required: false
-    },
-    center: {
-      type: Boolean,
-      default: false,
-      required: false
-    },
-    right: {
-      type: Boolean,
-      default: false,
-      required: false
-    },
-    justify: {
-      type: Boolean,
-      default: false,
-      required: false
-    },
-    baseline: {
-      type: Boolean,
-      default: false,
-      required: false
-    },
-    top: {
-      type: Boolean,
-      default: false,
-      required: false
-    },
-    middle: {
-      type: Boolean,
-      default: false,
-      required: false
-    },
-    bottom: {
+    break: {
       type: Boolean,
       default: false,
       required: false
@@ -96,9 +80,13 @@ export default {
       return `h${this.formattedLevel}`
     },
     className() {
-      let className = []
+      const className = []
 
       className.push('heading')
+
+      if (this.size) {
+        className.push(`is-${this.size}`)
+      }
 
       if (this.strong) {
         className.push('is-strong')
@@ -116,48 +104,24 @@ export default {
         className.push('is-delete')
       }
 
-      if (this.capitalize) {
-        className.push('is-capitalize')
+      if (this.textDecoration) {
+        className.push(`is-${this.textDecoration}`)
       }
 
-      if (this.lowercase) {
-        className.push('is-lowercase')
+      if (this.align) {
+        className.push(`is-${this.align}`)
       }
 
-      if (this.uppercase) {
-        className.push('is-uppercase')
+      if (this.transform) {
+        className.push(`is-${this.transform}`)
       }
 
-      if (this.left) {
-        className.push('is-left')
+      if (this.ellipsis) {
+        className.push(`is-ellipsis`)
       }
 
-      if (this.center) {
-        className.push('is-center')
-      }
-
-      if (this.right) {
-        className.push('is-right')
-      }
-
-      if (this.justify) {
-        className.push('is-justify')
-      }
-
-      if (this.baseline) {
-        className.push('is-baseline')
-      }
-
-      if (this.top) {
-        className.push('is-top')
-      }
-
-      if (this.middle) {
-        className.push('is-middle')
-      }
-
-      if (this.bottom) {
-        className.push('is-bottom')
+      if (this.verticalAlign) {
+        className.push(`is-${this.verticalAlign}`)
       }
 
       if (this.nowrap) {
@@ -166,10 +130,6 @@ export default {
 
       if (this.break) {
         className.push('is-break')
-      }
-
-      if (this.size) {
-        className.push(`is-${this.size}`)
       }
 
       return className

@@ -10,7 +10,7 @@
 <script>
 import Presenter from '../Presenter.vue'
 export default {
-  name: 'MbText',
+  name: 'VbText',
   extends: Presenter,
   props: {
     ...Presenter.props
