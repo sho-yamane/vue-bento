@@ -8,10 +8,10 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
 .test {
   font-size: 21px;
-  background: #000;
+  background: $red-50;
   color: #fff;
 }
 </style>

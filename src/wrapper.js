@@ -1,3 +1,5 @@
+import './scss/style.scss' // 別ファイルにするときはコメントアウトして build:style コマンドでビルドする
+
 import MyComponent from './MyComponent.vue'
 import MyComponent2 from './MyComponent2.vue'
 
