@@ -60,6 +60,26 @@
     <div class="test-list">
       <vb-list :list="list"/>
     </div>
+    <div class="test-table">
+      <vb-table line="line">
+        <vb-thead>
+          <vb-tr>
+            <vb-th>VbTh</vb-th>
+            <vb-th>VbTh</vb-th>
+            <vb-th>VbTh</vb-th>
+            <vb-th>VbTh</vb-th>
+          </vb-tr>
+        </vb-thead>
+        <vb-tbody>
+          <vb-tr>
+            <vb-td>VbTd</vb-td>
+            <vb-td>VbTd</vb-td>
+            <vb-td>VbTd</vb-td>
+            <vb-td>VbTd</vb-td>
+          </vb-tr>
+        </vb-tbody>
+      </vb-table>
+    </div>
   </div>
 </template>
 
@@ -118,10 +138,22 @@ import VbButtonDanger from './components/atoms/Button/src/Danger'
 import VbButtonDisable from './components/atoms/Button/src/Disable'
 import VbButtonSuccess from './components/atoms/Button/src/Success'
 import VbList from './components/molecules/List/src/Default'
+import VbTable from './components/atoms/Table/src/Default'
+import VbTr from './components/atoms/Tr/src/Default'
+import VbTh from './components/atoms/Th/src/Default'
+import VbTd from './components/atoms/Td/src/Default'
+import VbThead from './components/atoms/THead/src/Default'
+import VbTbody from './components/atoms/Tbody/src/Default'
 
 export default {
   name: 'Test',
   components: {
+    VbTbody,
+    VbThead,
+    VbTd,
+    VbTh,
+    VbTr,
+    VbTable,
     VbList,
     VbButtonSuccess,
     VbButtonDisable,
