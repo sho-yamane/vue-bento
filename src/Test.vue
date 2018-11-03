@@ -57,6 +57,9 @@
       <vb-button-disable>VbButtonDisable</vb-button-disable>
       <vb-button-success>VbButtonSuccess</vb-button-success>
     </div>
+    <div class="test-list">
+      <vb-list :list="list"/>
+    </div>
   </div>
 </template>
 
@@ -114,10 +117,12 @@ import VbButtonPrimary from './components/atoms/Button/src/Primary'
 import VbButtonDanger from './components/atoms/Button/src/Danger'
 import VbButtonDisable from './components/atoms/Button/src/Disable'
 import VbButtonSuccess from './components/atoms/Button/src/Success'
+import VbList from './components/molecules/List/src/Default'
 
 export default {
   name: 'Test',
   components: {
+    VbList,
     VbButtonSuccess,
     VbButtonDisable,
     VbButtonDanger,
@@ -169,6 +174,14 @@ export default {
     VbTextDark9,
     VbTextDanger,
     VbText
+  },
+  data() {
+    return {
+      list: [
+        'リストのテキストは1行目以外をインデントして読みやすくする',
+        'リストのテキストは1行目以外をインデントして読みやすくする'
+      ]
+    }
   }
 }
 </script>

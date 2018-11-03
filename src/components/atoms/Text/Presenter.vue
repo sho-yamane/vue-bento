@@ -5,7 +5,7 @@ export default {
     tag: {
       type: String,
       default: 'p',
-      required: true,
+      required: false,
       validator(val) {
         return ['div', 'p', 'span'].includes(val)
       }
@@ -13,7 +13,7 @@ export default {
     size: {
       type: String,
       default: 'md',
-      required: true,
+      required: false,
       validator(val) {
         return ['xxs', 'xs', 'sm', 'md', 'lg', 'xl', 'xxl'].includes(val)
       }

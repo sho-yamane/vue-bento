@@ -4,15 +4,35 @@ export default {
   props: {
     list: {
       type: Array,
-
-      default: () => {
-        return []
+      required: true
+    },
+    decoration: {
+      type: String,
+      required: false,
+      default: 'disc',
+      validator(val) {
+        return ['disc', 'circle', 'decimal'].includes(val)
       }
     }
   },
   computed: {
+    tag() {
+      if (this.decoration === 'decimal') {
+        return 'ol'
+      } else {
+        return 'ul'
+      }
+    },
     className() {
-      return true
+      const className = []
+
+      className.push('list')
+
+      if (this.decoration) {
+        className.push(`is-${this.decoration}`)
+      }
+
+      return className
     }
   }
 }

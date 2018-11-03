@@ -5,7 +5,7 @@ export default {
     decoration: {
       type: String,
       default: 'plain',
-      required: true,
+      required: false,
       validator(val) {
         return ['plain', 'melt', 'outline', 'ghost'].includes(val)
       }
@@ -28,7 +28,7 @@ export default {
     size: {
       type: String,
       default: 'md',
-      required: true,
+      required: false,
       validator(val) {
         return ['xxs', 'xs', 'sm', 'md', 'lg', 'xl', 'xxl'].includes(val)
       }

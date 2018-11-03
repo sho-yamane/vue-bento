@@ -5,12 +5,12 @@ export default {
     level: {
       type: Number,
       default: 1,
-      required: true
+      required: false
     },
     size: {
       type: String,
       default: 'md',
-      required: true,
+      required: false,
       validator(val) {
         return ['xxs', 'xs', 'sm', 'md', 'lg', 'xl', 'xxl'].includes(val)
       }
