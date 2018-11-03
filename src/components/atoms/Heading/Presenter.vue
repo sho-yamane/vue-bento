@@ -10,7 +10,10 @@ export default {
     size: {
       type: String,
       default: 'md',
-      required: true
+      required: true,
+      validator(val) {
+        return ['xxs', 'xs', 'sm', 'md', 'lg', 'xl', 'xxl'].includes(val)
+      }
     },
     strong: {
       type: Boolean,

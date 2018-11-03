@@ -50,6 +50,13 @@
       <vb-text-light8>VbTextLight8</vb-text-light8>
       <vb-text-light9>VbTextLight9</vb-text-light9>
     </div>
+    <div class="test-button">
+      <vb-button>VbButton</vb-button>
+      <vb-button-primary>VbButtonPrimary</vb-button-primary>
+      <vb-button-danger>VbButtonDanger</vb-button-danger>
+      <vb-button-disable>VbButtonDisable</vb-button-disable>
+      <vb-button-success>VbButtonSuccess</vb-button-success>
+    </div>
   </div>
 </template>
 
@@ -102,9 +109,20 @@ import VbTextLight7 from './components/atoms/Text/src/Light7'
 import VbTextLight8 from './components/atoms/Text/src/Light8'
 import VbTextLight9 from './components/atoms/Text/src/Light9'
 
+import VbButton from './components/atoms/Button/src/Default'
+import VbButtonPrimary from './components/atoms/Button/src/Primary'
+import VbButtonDanger from './components/atoms/Button/src/Danger'
+import VbButtonDisable from './components/atoms/Button/src/Disable'
+import VbButtonSuccess from './components/atoms/Button/src/Success'
+
 export default {
   name: 'Test',
   components: {
+    VbButtonSuccess,
+    VbButtonDisable,
+    VbButtonDanger,
+    VbButtonPrimary,
+    VbButton,
     VbHeadingLight,
     VbHeadingLight1,
     VbHeadingLight2,
