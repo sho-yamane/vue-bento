@@ -84,129 +84,14 @@
 </template>
 
 <script>
-import VbHeading from './components/atoms/Heading/src/Default'
-import VbHeadingDanger from './components/atoms/Heading/src/Danger'
-import VbHeadingDark from './components/atoms/Heading/src/Dark'
-import VbHeadingDark1 from './components/atoms/Heading/src/Dark1'
-import VbHeadingDark2 from './components/atoms/Heading/src/Dark2'
-import VbHeadingDark3 from './components/atoms/Heading/src/Dark3'
-import VbHeadingDark4 from './components/atoms/Heading/src/Dark4'
-import VbHeadingDark5 from './components/atoms/Heading/src/Dark5'
-import VbHeadingDark6 from './components/atoms/Heading/src/Dark6'
-import VbHeadingDark7 from './components/atoms/Heading/src/Dark7'
-import VbHeadingDark8 from './components/atoms/Heading/src/Dark8'
-import VbHeadingDark9 from './components/atoms/Heading/src/Dark9'
-import VbHeadingInfo from './components/atoms/Heading/src/Info'
-import VbHeadingLight from './components/atoms/Heading/src/Light'
-import VbHeadingLight1 from './components/atoms/Heading/src/Light1'
-import VbHeadingLight2 from './components/atoms/Heading/src/Light2'
-import VbHeadingLight3 from './components/atoms/Heading/src/Light3'
-import VbHeadingLight4 from './components/atoms/Heading/src/Light4'
-import VbHeadingLight5 from './components/atoms/Heading/src/Light5'
-import VbHeadingLight6 from './components/atoms/Heading/src/Light6'
-import VbHeadingLight7 from './components/atoms/Heading/src/Light7'
-import VbHeadingLight8 from './components/atoms/Heading/src/Light8'
-import VbHeadingLight9 from './components/atoms/Heading/src/Light9'
-
-import VbText from './components/atoms/Text/src/Default'
-import VbTextDanger from './components/atoms/Text/src/Danger'
-import VbTextDark from './components/atoms/Text/src/Dark'
-import VbTextDark1 from './components/atoms/Text/src/Dark1'
-import VbTextDark2 from './components/atoms/Text/src/Dark2'
-import VbTextDark3 from './components/atoms/Text/src/Dark3'
-import VbTextDark4 from './components/atoms/Text/src/Dark4'
-import VbTextDark5 from './components/atoms/Text/src/Dark5'
-import VbTextDark6 from './components/atoms/Text/src/Dark6'
-import VbTextDark7 from './components/atoms/Text/src/Dark7'
-import VbTextDark8 from './components/atoms/Text/src/Dark8'
-import VbTextDark9 from './components/atoms/Text/src/Dark9'
-import VbTextInfo from './components/atoms/Text/src/Info'
-import VbTextLight from './components/atoms/Text/src/Light'
-import VbTextLight1 from './components/atoms/Text/src/Light1'
-import VbTextLight2 from './components/atoms/Text/src/Light2'
-import VbTextLight3 from './components/atoms/Text/src/Light3'
-import VbTextLight4 from './components/atoms/Text/src/Light4'
-import VbTextLight5 from './components/atoms/Text/src/Light5'
-import VbTextLight6 from './components/atoms/Text/src/Light6'
-import VbTextLight7 from './components/atoms/Text/src/Light7'
-import VbTextLight8 from './components/atoms/Text/src/Light8'
-import VbTextLight9 from './components/atoms/Text/src/Light9'
-
-import VbButton from './components/atoms/Button/src/Default'
-import VbButtonPrimary from './components/atoms/Button/src/Primary'
-import VbButtonDanger from './components/atoms/Button/src/Danger'
-import VbButtonDisable from './components/atoms/Button/src/Disable'
-import VbButtonSuccess from './components/atoms/Button/src/Success'
-import VbList from './components/molecules/List/src/Default'
-import VbTable from './components/atoms/Table/src/Default'
-import VbTr from './components/atoms/Tr/src/Default'
-import VbTh from './components/atoms/Th/src/Default'
-import VbTd from './components/atoms/Td/src/Default'
-import VbThead from './components/atoms/THead/src/Default'
-import VbTbody from './components/atoms/Tbody/src/Default'
+import { components } from './wrapper'
 
 export default {
   name: 'Test',
-  components: {
-    VbTbody,
-    VbThead,
-    VbTd,
-    VbTh,
-    VbTr,
-    VbTable,
-    VbList,
-    VbButtonSuccess,
-    VbButtonDisable,
-    VbButtonDanger,
-    VbButtonPrimary,
-    VbButton,
-    VbHeadingLight,
-    VbHeadingLight1,
-    VbHeadingLight2,
-    VbHeadingLight3,
-    VbHeadingLight4,
-    VbHeadingLight5,
-    VbHeadingLight6,
-    VbHeadingLight7,
-    VbHeadingLight8,
-    VbHeadingLight9,
-    VbHeadingInfo,
-    VbHeadingDark,
-    VbHeadingDark1,
-    VbHeadingDark2,
-    VbHeadingDark3,
-    VbHeadingDark4,
-    VbHeadingDark5,
-    VbHeadingDark6,
-    VbHeadingDark7,
-    VbHeadingDark8,
-    VbHeadingDark9,
-    VbHeadingDanger,
-    VbHeading,
-    VbTextLight,
-    VbTextLight1,
-    VbTextLight2,
-    VbTextLight3,
-    VbTextLight4,
-    VbTextLight5,
-    VbTextLight6,
-    VbTextLight7,
-    VbTextLight8,
-    VbTextLight9,
-    VbTextInfo,
-    VbTextDark,
-    VbTextDark1,
-    VbTextDark2,
-    VbTextDark3,
-    VbTextDark4,
-    VbTextDark5,
-    VbTextDark6,
-    VbTextDark7,
-    VbTextDark8,
-    VbTextDark9,
-    VbTextDanger,
-    VbText
-  },
+  components: components.reduce((componentMap, component) => {
+    componentMap[component.name] = component
+    return componentMap
+  }, {}),
   data() {
     return {
       list: [
