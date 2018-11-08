@@ -6,6 +6,7 @@ const autoImportSass = `
 `
 
 module.exports = {
+  productionSourceMap: false,
   css: {
     extract: true, // CSS をコンポーネントごとに持たせる場合は false
     loaderOptions: {
