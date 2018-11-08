@@ -12,6 +12,7 @@
     "serve": "STYLE_DIST_DIR=public yarn build:style && vue serve",
     "build": "vue-cli-service build --target lib --name vue-bento src/index.js",
     "build:style": "gulp build:sass --gulpfile build/gulpfile.js",
+    "preserve": "yarn prebuild",
     "prebuild": "yarn prebuild:indexes && yarn prebuild:wrapper && yarn lint",
     "prebuild:indexes": "node build/index-builder/index.js",
     "prebuild:wrapper": "node build/wrapper-builder/index.js",
