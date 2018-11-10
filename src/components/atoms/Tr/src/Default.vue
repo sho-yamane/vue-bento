@@ -1,5 +1,5 @@
 <template>
-  <tr>
+  <tr :class="className">
     <slot/>
   </tr>
 </template>

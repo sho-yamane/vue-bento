@@ -1,5 +1,5 @@
 <template>
-  <th>
+  <th :class="className">
     <slot/>
   </th>
 </template>

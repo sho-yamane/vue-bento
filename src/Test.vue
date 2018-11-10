@@ -64,7 +64,7 @@
       <vb-table line="line">
         <vb-thead>
           <vb-tr>
-            <vb-th>VbTh</vb-th>
+            <vb-th paint="paint">VbTh</vb-th>
             <vb-th>VbTh</vb-th>
             <vb-th>VbTh</vb-th>
             <vb-th>VbTh</vb-th>
