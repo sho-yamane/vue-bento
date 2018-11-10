@@ -60,6 +60,26 @@
     <div class="test-list">
       <vb-list :list="list"/>
     </div>
+    <div class="test-table">
+      <vb-table line="line">
+        <vb-thead>
+          <vb-tr>
+            <vb-th paint="paint">VbTh</vb-th>
+            <vb-th>VbTh</vb-th>
+            <vb-th>VbTh</vb-th>
+            <vb-th>VbTh</vb-th>
+          </vb-tr>
+        </vb-thead>
+        <vb-tbody>
+          <vb-tr>
+            <vb-td>VbTd</vb-td>
+            <vb-td>VbTd</vb-td>
+            <vb-td>VbTd</vb-td>
+            <vb-td>VbTd</vb-td>
+          </vb-tr>
+        </vb-tbody>
+      </vb-table>
+    </div>
   </div>
 </template>
 

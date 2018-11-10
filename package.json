@@ -9,7 +9,7 @@
   "unpkg": "dist/vue-bento.umd.min.js",
   "style": "dist/style/vue-bento.css",
   "scripts": {
-    "serve": "STYLE_DIST_DIR=public yarn build:style && vue serve",
+    "serve": "STYLE_DIST_DIR=public yarn build:style && vue serve --open ./src/Test.vue",
     "build": "vue-cli-service build --target lib --name vue-bento src/index.js",
     "build:style": "gulp build:sass --gulpfile build/gulpfile.js",
     "preserve": "yarn prebuild",
