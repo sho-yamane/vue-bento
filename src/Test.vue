@@ -81,7 +81,22 @@
       </vb-table>
     </div>
     <div class="test-alert">
+      <vb-alert>
+        <vb-text>VbAlert + VbText</vb-text>
+      </vb-alert>
       <vb-alert color="primary">
+        <vb-text>VbAlert + VbText</vb-text>
+      </vb-alert>
+      <vb-alert color="info">
+        <vb-text>VbAlert + VbText</vb-text>
+      </vb-alert>
+      <vb-alert color="success">
+        <vb-text>VbAlert + VbText</vb-text>
+      </vb-alert>
+      <vb-alert color="warning">
+        <vb-text>VbAlert + VbText</vb-text>
+      </vb-alert>
+      <vb-alert color="danger">
         <vb-text>VbAlert + VbText</vb-text>
       </vb-alert>
     </div>
