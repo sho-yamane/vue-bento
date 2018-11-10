@@ -80,6 +80,11 @@
         </vb-tbody>
       </vb-table>
     </div>
+    <div class="test-alert">
+      <vb-alert color="primary">
+        <vb-text>VbAlert + VbText</vb-text>
+      </vb-alert>
+    </div>
   </div>
 </template>
 
