@@ -1,6 +1,6 @@
 <template>
   <label :class="className">
-    <slot></slot>
+    <slot/>
   </label>
 </template>
 
@@ -15,6 +15,6 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 @import './style.scss';
 </style>

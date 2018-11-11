@@ -100,6 +100,15 @@
         <vb-text>VbAlert + VbText</vb-text>
       </vb-alert>
     </div>
+    <div class="test-form">
+      <vb-select-box :options="options"/>
+      <vb-select-box 
+        :options="options" 
+        :disabled="true"/>
+      <vb-select-box 
+        :options="options" 
+        :multiple="true"/>
+    </div>
   </div>
 </template>
 
@@ -117,6 +126,11 @@ export default {
       list: [
         'リストのテキストは1行目以外をインデントして読みやすくする',
         'リストのテキストは1行目以外をインデントして読みやすくする'
+      ],
+      options: [
+        { text: 'abc', value: 1 },
+        { text: 'def', value: 2 },
+        { text: 'ghi', value: 3 }
       ]
     }
   }
