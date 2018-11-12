@@ -46,7 +46,6 @@
   },
   "dependencies": {
     "musubii": "^6.5.0",
-    "musubii-edge": "^0.0.1",
     "shitajicss": "^4.6.0"
   }
 }

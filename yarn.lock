@@ -6120,14 +6120,6 @@ multipipe@^0.1.0, multipipe@^0.1.2:
   dependencies:
     duplexer2 "0.0.2"
 
-musubii-edge@^0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/musubii-edge/-/musubii-edge-0.0.1.tgz#6d07aed7e25b60f0befdd5af3edc67cb1db558be"
-  dependencies:
-    moftone "^6.2.0"
-    sass-dashi "^0.3.0"
-    shitajicss "5.0.0"
-
 musubii@^6.5.0:
   version "6.5.0"
   resolved "https://registry.yarnpkg.com/musubii/-/musubii-6.5.0.tgz#6c60bf14e018e31efe2e0aef1c2ff464dc0fcc43"
@@ -8008,10 +8000,6 @@ shell-quote@^1.6.1:
 shellwords@^0.1.1:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/shellwords/-/shellwords-0.1.1.tgz#d6b9181c1a48d397324c84871efbcfc73fc0654b"
-
-shitajicss@5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/shitajicss/-/shitajicss-5.0.0.tgz#e1eaef18ed74bb71f3e7df66faf1bc559e50abf7"
 
 shitajicss@^4.6.0:
   version "4.6.0"
