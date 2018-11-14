@@ -2,7 +2,7 @@
 
 VueBentoはCSSフレームワーク「[Musubii](https://musubii.qranoko.jp/)」ベースに作られたAtomicDesignベースに作られたコンポーネントライブラリです。
 
-## Set up
+## Setup
 
 ```
 # npm
