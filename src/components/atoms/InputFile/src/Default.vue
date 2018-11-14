@@ -7,7 +7,7 @@
 <script>
 import Presenter from '../Presenter.vue'
 export default {
-  name: 'VbInputTime',
+  name: 'VbInputFile',
   extends: Presenter,
   props: {
     ...Presenter.props
