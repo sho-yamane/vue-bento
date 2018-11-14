@@ -1,7 +1,6 @@
 <template>
   <button
     :class="className"
-    class="is-primary"
   >
     <slot>text</slot>
   </button>
@@ -10,7 +9,7 @@
 <script>
 import Presenter from '../Presenter.vue'
 export default {
-  name: 'VbButtonPrimary',
+  name: 'VbBtn',
   extends: Presenter,
   props: {
     ...Presenter.props

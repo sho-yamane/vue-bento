@@ -46,7 +46,7 @@ export default {
         return ['link', 'link-reverse'].includes(val)
       }
     },
-    align: {
+    horizontal: {
       type: String,
       default: null,
       required: false,
@@ -67,7 +67,7 @@ export default {
       default: false,
       required: false
     },
-    verticalAlign: {
+    vertical: {
       type: String,
       default: null,
       required: false,
@@ -84,6 +84,37 @@ export default {
       type: Boolean,
       default: false,
       required: false
+    },
+    responsiveHorizontal: {
+      type: String,
+      default: null,
+      required: false,
+      validator(val) {
+        return ['left', 'center', 'right'].includes(val)
+      }
+    },
+    breakpoint: {
+      type: String,
+      default: null,
+      required: false,
+      validator(val) {
+        return [
+          'mobile',
+          'fablet',
+          'tablet',
+          'desktop',
+          'wide',
+          'landscape',
+          'portrait',
+          'mobile-only',
+          'fablet-only',
+          'tablet-only',
+          'desktop-only',
+          'mobile-fablet',
+          'mobile-tablet',
+          'mobile-desktop'
+        ].includes(val)
+      }
     }
   },
   computed: {
@@ -120,8 +151,8 @@ export default {
         className.push(`is-${this.textDecoration}`)
       }
 
-      if (this.align) {
-        className.push(`is-${this.align}`)
+      if (this.horizontal) {
+        className.push(`is-${this.horizontal}`)
       }
 
       if (this.transform) {
@@ -132,8 +163,8 @@ export default {
         className.push(`is-ellipsis`)
       }
 
-      if (this.verticalAlign) {
-        className.push(`is-${this.verticalAlign}`)
+      if (this.vertical) {
+        className.push(`is-${this.vertical}`)
       }
 
       if (this.nowrap) {
@@ -142,6 +173,10 @@ export default {
 
       if (this.break) {
         className.push('is-break')
+      }
+
+      if (this.responsiveHorizontal && this.breakpoint) {
+        className.push(`is-${this.breakpoint}-${this.responsiveHorizontal}`)
       }
 
       return className

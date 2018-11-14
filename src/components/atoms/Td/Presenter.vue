@@ -10,7 +10,7 @@ export default {
         return ['paint', 'spot', 'danger'].includes(val)
       }
     },
-    align: {
+    horizontal: {
       type: String,
       default: null,
       required: false,
@@ -35,8 +35,8 @@ export default {
         className.push(`is-${this.paint}`)
       }
 
-      if (this.align) {
-        className.push(`is-${this.align}`)
+      if (this.horizontal) {
+        className.push(`is-${this.horizontal}`)
       }
 
       if (this.vertical) {
