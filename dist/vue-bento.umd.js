@@ -5766,12 +5766,12 @@ var InputEmail_install = function install(Vue) {
 /* harmony default export */ var InputEmail = ({
   install: InputEmail_install
 });
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"49e0052e-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/atoms/InputFile/src/Default.vue?vue&type=template&id=2c0d1fc6&
-var Defaultvue_type_template_id_2c0d1fc6_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('input',{class:_vm.className,attrs:{"type":"time"}})}
-var Defaultvue_type_template_id_2c0d1fc6_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"49e0052e-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/atoms/InputFile/src/Default.vue?vue&type=template&id=b6b87a12&
+var Defaultvue_type_template_id_b6b87a12_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('input',{class:_vm.className,attrs:{"type":"time"}})}
+var Defaultvue_type_template_id_b6b87a12_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/atoms/InputFile/src/Default.vue?vue&type=template&id=2c0d1fc6&
+// CONCATENATED MODULE: ./src/components/atoms/InputFile/src/Default.vue?vue&type=template&id=b6b87a12&
 
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/atoms/InputFile/Presenter.vue?vue&type=script&lang=js&
 /* harmony default export */ var InputFile_Presentervue_type_script_lang_js_ = ({
@@ -5818,7 +5818,7 @@ InputFile_Presenter_component.options.__file = "Presenter.vue"
 //
 
 /* harmony default export */ var InputFile_src_Defaultvue_type_script_lang_js_ = ({
-  name: 'VbInputTime',
+  name: 'VbInputFile',
   extends: InputFile_Presenter,
   props: _objectSpread({}, InputFile_Presenter.props)
 });
@@ -5838,8 +5838,8 @@ var InputFile_src_Defaultvue_type_style_index_0_lang_scss_ = __webpack_require__
 
 var InputFile_src_Default_component = normalizeComponent(
   atoms_InputFile_src_Defaultvue_type_script_lang_js_,
-  Defaultvue_type_template_id_2c0d1fc6_render,
-  Defaultvue_type_template_id_2c0d1fc6_staticRenderFns,
+  Defaultvue_type_template_id_b6b87a12_render,
+  Defaultvue_type_template_id_b6b87a12_staticRenderFns,
   false,
   null,
   null,
