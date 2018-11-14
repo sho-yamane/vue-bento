@@ -35,7 +35,7 @@ export default {
       default: false,
       required: false
     },
-    align: {
+    horizontal: {
       type: String,
       default: null,
       required: false,
@@ -56,7 +56,7 @@ export default {
       default: false,
       required: false
     },
-    verticalAlign: {
+    vertical: {
       type: String,
       default: null,
       required: false,
@@ -111,8 +111,8 @@ export default {
         className.push(`is-${this.textDecoration}`)
       }
 
-      if (this.align) {
-        className.push(`is-${this.align}`)
+      if (this.horizontal) {
+        className.push(`is-${this.horizontal}`)
       }
 
       if (this.transform) {
@@ -123,8 +123,8 @@ export default {
         className.push(`is-ellipsis`)
       }
 
-      if (this.verticalAlign) {
-        className.push(`is-${this.verticalAlign}`)
+      if (this.vertical) {
+        className.push(`is-${this.vertical}`)
       }
 
       if (this.nowrap) {

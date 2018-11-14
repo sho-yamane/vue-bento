@@ -10,7 +10,7 @@ export default {
         return ['line', 'outline', 'border'].includes(val)
       }
     },
-    align: {
+    horizontal: {
       type: String,
       default: null,
       required: false,
@@ -34,8 +34,8 @@ export default {
         className.push(`is-${this.line}`)
       }
 
-      if (this.align) {
-        className.push(`is-${this.align}`)
+      if (this.horizontal) {
+        className.push(`is-${this.horizontal}`)
       }
 
       if (this.stripe) {

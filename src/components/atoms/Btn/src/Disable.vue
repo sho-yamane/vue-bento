@@ -1,7 +1,7 @@
 <template>
   <button
     :class="className"
-    class="is-danger"
+    class="is-disable"
   >
     <slot>text</slot>
   </button>
@@ -10,7 +10,7 @@
 <script>
 import Presenter from '../Presenter.vue'
 export default {
-  name: 'VbButtonDanger',
+  name: 'VbBtnDisable',
   extends: Presenter,
   props: {
     ...Presenter.props

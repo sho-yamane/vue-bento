@@ -1,15 +1,15 @@
 <template>
-  <button
+  <div
     :class="className"
   >
-    <slot>text</slot>
-  </button>
+    <slot/>
+  </div>
 </template>
 
 <script>
 import Presenter from '../Presenter.vue'
 export default {
-  name: 'VbButton',
+  name: 'VbGrid',
   extends: Presenter,
   props: {
     ...Presenter.props

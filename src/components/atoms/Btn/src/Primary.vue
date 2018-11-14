@@ -1,7 +1,7 @@
 <template>
   <button
     :class="className"
-    class="is-success"
+    class="is-primary"
   >
     <slot>text</slot>
   </button>
@@ -10,7 +10,7 @@
 <script>
 import Presenter from '../Presenter.vue'
 export default {
-  name: 'VbButtonSuccess',
+  name: 'VbBtnPrimary',
   extends: Presenter,
   props: {
     ...Presenter.props

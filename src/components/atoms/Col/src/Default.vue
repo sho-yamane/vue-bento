@@ -1,23 +1,18 @@
 <template>
-  <button
+  <div
     :class="className"
-    class="is-disable"
   >
-    <slot>text</slot>
-  </button>
+    <slot/>
+  </div>
 </template>
 
 <script>
 import Presenter from '../Presenter.vue'
 export default {
-  name: 'VbButtonDisable',
+  name: 'VbCol',
   extends: Presenter,
   props: {
     ...Presenter.props
   }
 }
 </script>
-
-<style lang="scss">
-@import './style.scss';
-</style>

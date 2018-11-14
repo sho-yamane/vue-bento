@@ -51,11 +51,11 @@
       <vb-text-light9>VbTextLight9</vb-text-light9>
     </div>
     <div class="test-button">
-      <vb-button>VbButton</vb-button>
-      <vb-button-primary>VbButtonPrimary</vb-button-primary>
-      <vb-button-danger>VbButtonDanger</vb-button-danger>
-      <vb-button-disable>VbButtonDisable</vb-button-disable>
-      <vb-button-success>VbButtonSuccess</vb-button-success>
+      <vb-btn>VbButton</vb-btn>
+      <vb-btn-primary>VbButtonPrimary</vb-btn-primary>
+      <vb-btn-danger>VbButtonDanger</vb-btn-danger>
+      <vb-btn-disable>VbButtonDisable</vb-btn-disable>
+      <vb-btn-success>VbButtonSuccess</vb-btn-success>
     </div>
     <div class="test-list">
       <vb-list :list="list"/>
