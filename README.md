@@ -1,6 +1,6 @@
 # VueBento 
 
-VueBentoはCSSフレームワーク「[Musubii](https://musubii.qranoko.jp/)」ベースに作られたAtomicDesign思想のコンポーネントライブラリです。
+VueBentoはCSSフレームワーク「[MUSUBii](https://musubii.qranoko.jp/)」ベースに作られたAtomicDesign思想のコンポーネントライブラリです。
 
 ## Setup
 
