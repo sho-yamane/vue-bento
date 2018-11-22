@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: 'VbInnerSoft'
+  name: 'VbInnerVw'
 }
 </script>
 

@@ -5220,12 +5220,12 @@ var Soft_component = normalizeComponent(
 
 Soft_component.options.__file = "Soft.vue"
 /* harmony default export */ var Soft = (Soft_component.exports);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"49e0052e-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/atoms/Inner/src/Vw.vue?vue&type=template&id=ed0cff96&
-var Vwvue_type_template_id_ed0cff96_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"inner-vw"},[_vm._t("default")],2)}
-var Vwvue_type_template_id_ed0cff96_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"49e0052e-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/atoms/Inner/src/Vw.vue?vue&type=template&id=5cb3de8c&
+var Vwvue_type_template_id_5cb3de8c_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"inner-vw"},[_vm._t("default")],2)}
+var Vwvue_type_template_id_5cb3de8c_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/atoms/Inner/src/Vw.vue?vue&type=template&id=ed0cff96&
+// CONCATENATED MODULE: ./src/components/atoms/Inner/src/Vw.vue?vue&type=template&id=5cb3de8c&
 
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/atoms/Inner/src/Vw.vue?vue&type=script&lang=js&
 //
@@ -5235,7 +5235,7 @@ var Vwvue_type_template_id_ed0cff96_staticRenderFns = []
 //
 //
 /* harmony default export */ var Vwvue_type_script_lang_js_ = ({
-  name: 'VbInnerSoft'
+  name: 'VbInnerVw'
 });
 // CONCATENATED MODULE: ./src/components/atoms/Inner/src/Vw.vue?vue&type=script&lang=js&
  /* harmony default export */ var src_Vwvue_type_script_lang_js_ = (Vwvue_type_script_lang_js_); 
@@ -5253,8 +5253,8 @@ var Vwvue_type_style_index_0_lang_scss_ = __webpack_require__("b6e1");
 
 var Vw_component = normalizeComponent(
   src_Vwvue_type_script_lang_js_,
-  Vwvue_type_template_id_ed0cff96_render,
-  Vwvue_type_template_id_ed0cff96_staticRenderFns,
+  Vwvue_type_template_id_5cb3de8c_render,
+  Vwvue_type_template_id_5cb3de8c_staticRenderFns,
   false,
   null,
   null,
