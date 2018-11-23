@@ -1,7 +1,13 @@
 <script>
 export default {
   name: 'Presenter',
-  props: {},
+  props: {
+    value: {
+      type: String,
+      required: false,
+      default: null
+    }
+  },
   computed: {
     className() {
       const className = []
