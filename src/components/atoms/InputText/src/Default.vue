@@ -1,13 +1,15 @@
 <template>
-  <textarea :class="className">
-    <slot></slot>
-  </textarea>
+  <input
+    :class="className"
+    :value="value"
+    type="text"
+    @input="$emit('input', $event.target.value)">
 </template>
 
 <script>
 import Presenter from '../Presenter.vue'
 export default {
-  name: 'VbTextarea',
+  name: 'VbInputText',
   extends: Presenter,
   props: {
     ...Presenter.props

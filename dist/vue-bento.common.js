@@ -6529,17 +6529,23 @@ var InputTel_install = function install(Vue) {
 /* harmony default export */ var InputTel = ({
   install: InputTel_install
 });
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"49e0052e-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/atoms/InputText/src/Default.vue?vue&type=template&id=140b9aa0&
-var Defaultvue_type_template_id_140b9aa0_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('textarea',{class:_vm.className},[_vm._v("  <slot></slot>\n")])}
-var Defaultvue_type_template_id_140b9aa0_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"49e0052e-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/atoms/InputText/src/Default.vue?vue&type=template&id=3e34f722&
+var Defaultvue_type_template_id_3e34f722_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('input',{class:_vm.className,attrs:{"type":"text"},domProps:{"value":_vm.value},on:{"input":function($event){_vm.$emit('input', $event.target.value)}}})}
+var Defaultvue_type_template_id_3e34f722_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/atoms/InputText/src/Default.vue?vue&type=template&id=140b9aa0&
+// CONCATENATED MODULE: ./src/components/atoms/InputText/src/Default.vue?vue&type=template&id=3e34f722&
 
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/atoms/InputText/Presenter.vue?vue&type=script&lang=js&
 /* harmony default export */ var InputText_Presentervue_type_script_lang_js_ = ({
   name: 'Presenter',
-  props: {},
+  props: {
+    value: {
+      type: String,
+      required: false,
+      default: null
+    }
+  },
   computed: {
     className: function className() {
       var className = [];
@@ -6579,9 +6585,11 @@ InputText_Presenter_component.options.__file = "Presenter.vue"
 //
 //
 //
+//
+//
 
 /* harmony default export */ var InputText_src_Defaultvue_type_script_lang_js_ = ({
-  name: 'VbTextarea',
+  name: 'VbInputText',
   extends: InputText_Presenter,
   props: _objectSpread({}, InputText_Presenter.props)
 });
@@ -6601,8 +6609,8 @@ var InputText_src_Defaultvue_type_style_index_0_lang_scss_ = __webpack_require__
 
 var InputText_src_Default_component = normalizeComponent(
   atoms_InputText_src_Defaultvue_type_script_lang_js_,
-  Defaultvue_type_template_id_140b9aa0_render,
-  Defaultvue_type_template_id_140b9aa0_staticRenderFns,
+  Defaultvue_type_template_id_3e34f722_render,
+  Defaultvue_type_template_id_3e34f722_staticRenderFns,
   false,
   null,
   null,
@@ -9590,17 +9598,23 @@ var Text_install = function install(Vue) {
 /* harmony default export */ var Text = ({
   install: Text_install
 });
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"49e0052e-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/atoms/Textarea/src/Default.vue?vue&type=template&id=5ce30604&
-var Defaultvue_type_template_id_5ce30604_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('input',{class:_vm.className,attrs:{"type":"text"}})}
-var Defaultvue_type_template_id_5ce30604_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"49e0052e-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/atoms/Textarea/src/Default.vue?vue&type=template&id=27f698a9&
+var Defaultvue_type_template_id_27f698a9_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('textarea',{class:_vm.className,domProps:{"value":_vm.value},on:{"input":function($event){_vm.$emit('input', $event.target.value)}}},[_vm._v("  <slot></slot>\n")])}
+var Defaultvue_type_template_id_27f698a9_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/atoms/Textarea/src/Default.vue?vue&type=template&id=5ce30604&
+// CONCATENATED MODULE: ./src/components/atoms/Textarea/src/Default.vue?vue&type=template&id=27f698a9&
 
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/atoms/Textarea/Presenter.vue?vue&type=script&lang=js&
 /* harmony default export */ var Textarea_Presentervue_type_script_lang_js_ = ({
   name: 'Presenter',
-  props: {},
+  props: {
+    value: {
+      type: String,
+      required: false,
+      default: null
+    }
+  },
   computed: {
     className: function className() {
       var className = [];
@@ -9640,9 +9654,13 @@ Textarea_Presenter_component.options.__file = "Presenter.vue"
 //
 //
 //
+//
+//
+//
+//
 
 /* harmony default export */ var Textarea_src_Defaultvue_type_script_lang_js_ = ({
-  name: 'VbInputText',
+  name: 'VbTextarea',
   extends: Textarea_Presenter,
   props: _objectSpread({}, Textarea_Presenter.props)
 });
@@ -9662,8 +9680,8 @@ var Textarea_src_Defaultvue_type_style_index_0_lang_scss_ = __webpack_require__(
 
 var Textarea_src_Default_component = normalizeComponent(
   atoms_Textarea_src_Defaultvue_type_script_lang_js_,
-  Defaultvue_type_template_id_5ce30604_render,
-  Defaultvue_type_template_id_5ce30604_staticRenderFns,
+  Defaultvue_type_template_id_27f698a9_render,
+  Defaultvue_type_template_id_27f698a9_staticRenderFns,
   false,
   null,
   null,
