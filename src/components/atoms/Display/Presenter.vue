@@ -38,6 +38,10 @@ export default {
     className() {
       const className = []
 
+      if (this.display) {
+        className.push(`is-${this.display}`)
+      }
+
       if (this.display && this.breakpoint) {
         className.push(`is-${this.breakpoint}-${this.display}`)
       }

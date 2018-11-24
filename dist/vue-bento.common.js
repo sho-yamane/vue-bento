@@ -3338,6 +3338,10 @@ var Defaultvue_type_template_id_2fc7fedf_staticRenderFns = []
     className: function className() {
       var className = [];
 
+      if (this.display) {
+        className.push("is-".concat(this.display));
+      }
+
       if (this.display && this.breakpoint) {
         className.push("is-".concat(this.breakpoint, "-").concat(this.display));
       }
