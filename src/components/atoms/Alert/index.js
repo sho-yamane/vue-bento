@@ -1,6 +1,8 @@
 import Default from './src/Default.vue'
 
-export const components = [Default]
+export { default as VbAlertDefault } from './src/Default.vue'
+
+const components = [Default]
 
 const install = function(Vue) {
   components.forEach(component => {

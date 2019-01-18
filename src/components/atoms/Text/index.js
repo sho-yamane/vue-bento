@@ -25,7 +25,34 @@ import Primary from './src/Primary.vue'
 import Success from './src/Success.vue'
 import Warning from './src/Warning.vue'
 
-export const components = [
+export { default as VbTextDanger } from './src/Danger.vue'
+export { default as VbTextDark } from './src/Dark.vue'
+export { default as VbTextDark1 } from './src/Dark1.vue'
+export { default as VbTextDark2 } from './src/Dark2.vue'
+export { default as VbTextDark3 } from './src/Dark3.vue'
+export { default as VbTextDark4 } from './src/Dark4.vue'
+export { default as VbTextDark5 } from './src/Dark5.vue'
+export { default as VbTextDark6 } from './src/Dark6.vue'
+export { default as VbTextDark7 } from './src/Dark7.vue'
+export { default as VbTextDark8 } from './src/Dark8.vue'
+export { default as VbTextDark9 } from './src/Dark9.vue'
+export { default as VbTextDefault } from './src/Default.vue'
+export { default as VbTextInfo } from './src/Info.vue'
+export { default as VbTextLight } from './src/Light.vue'
+export { default as VbTextLight1 } from './src/Light1.vue'
+export { default as VbTextLight2 } from './src/Light2.vue'
+export { default as VbTextLight3 } from './src/Light3.vue'
+export { default as VbTextLight4 } from './src/Light4.vue'
+export { default as VbTextLight5 } from './src/Light5.vue'
+export { default as VbTextLight6 } from './src/Light6.vue'
+export { default as VbTextLight7 } from './src/Light7.vue'
+export { default as VbTextLight8 } from './src/Light8.vue'
+export { default as VbTextLight9 } from './src/Light9.vue'
+export { default as VbTextPrimary } from './src/Primary.vue'
+export { default as VbTextSuccess } from './src/Success.vue'
+export { default as VbTextWarning } from './src/Warning.vue'
+
+const components = [
   Danger,
   Dark,
   Dark1,

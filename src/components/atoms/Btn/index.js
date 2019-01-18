@@ -4,7 +4,13 @@ import Disable from './src/Disable.vue'
 import Primary from './src/Primary.vue'
 import Success from './src/Success.vue'
 
-export const components = [Danger, Default, Disable, Primary, Success]
+export { default as VbBtnDanger } from './src/Danger.vue'
+export { default as VbBtnDefault } from './src/Default.vue'
+export { default as VbBtnDisable } from './src/Disable.vue'
+export { default as VbBtnPrimary } from './src/Primary.vue'
+export { default as VbBtnSuccess } from './src/Success.vue'
+
+const components = [Danger, Default, Disable, Primary, Success]
 
 const install = function(Vue) {
   components.forEach(component => {
