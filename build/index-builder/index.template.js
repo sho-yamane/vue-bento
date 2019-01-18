@@ -1,7 +1,9 @@
 <% _.each(components, (component) => { %>
 import <%= component.name %> from './src/<%= component.filename %>'<% }) %>
+<% _.each(components, (component) => { %>
+export { default as Vb<%= name %><%= component.name %> } from './src/<%= component.filename %>'<% }) %>
 
-export const components = [
+const components = [
   <% _.each(components, (component) => { %>
     <%= component.name %>,<% }) %>
 ]

@@ -1,11 +1,13 @@
 import './scss/style.scss' // 別ファイルにするときはコメントアウトして build:style コマンドでビルドする
 
-import { components } from './wrapper'
+export * from './wrapper'
+import * as components from './wrapper'
 
 function install(Vue) {
   if (install.installed) return
   install.installed = true
-  components.forEach(component => {
+  Object.keys(components).forEach(componentName => {
+    const component = components[componentName]
     Vue.component(component.name, component)
   })
 }
